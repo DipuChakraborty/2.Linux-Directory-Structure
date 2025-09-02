@@ -1,0 +1,56 @@
+#################################2.Linux Directory Structure#######################
+
+/root:
+The "/root" directory in the Linux filesystem layout serves as a secure and centralized location for the root user to store personal files, configuration settings, and perform administrative tasks. /root directory content accessed by root user.
+
+/boot:
+The directory contains static files required to boot the file system, such as the Linux Kernel. These function are essential for system to boot properly
+
+/dev:
+The directory contains device nodes that either represent device that are attached to the system or virtual devices that are provide 
+
+/etc:
+The directory is reserved for configuration files that are local to machine. No binary are to be placed in
+
+/bin:
+The /bin directory contains the essential user program that must be present when the system is mounted in single-user mode.Contains important system programs and utilities such as bash shell are located in /bin
+
+/sbin:
+The /sbin directory is similar to the /bin directory. It contains essential binaries that are generally intended to be run by the root user for system administration.
+
+/home:
+The /home directory contains a home folder for each user.Example:Desktop,Documnnts,Downloads 
+
+/lib & lib64:
+The /lib directory contains library needed by the essential binaries in the /bin and /sbin folder.Library needed by the binaries /usr/bin folder in /usr/lib
+
+/mnt & /media:
+the /mnt directory is where system administrators mounted temporary file system while using them. The /media directory contains subdirectories where removable media device inserted in to computer are mounted.
+
+/opt:
+The /opt directory contains subdirectories for optional software packages.Additional packages will install into/opt drectory
+
+/proc:
+The /proc directory contains special files that represent system and process information.
+
+/run
+The /run directory i farly new and give application a standerd place to store transient files they require like socket and process IDs.The directory is the only clean solution for early-runtime-dir prblem
+
+
+/srv:
+The term srv stands for service. The /srv directory contains site-specific data for your Linux distribution. It points to the location for data files for a specific service such as www, rsync, FTP and CVS
+
+/sys:
+The /sys directory as virtual file sustem, which sores and allows modification of the deices connected to the system. sysfs is used by program such as udev to access devices and device driver information.
+
+/usr:
+The /user directory contains application and files used by the users, as opposed to applications and files used by the system. The /usr directory also contains other directories- for example, architecture-independent files like graphics are located in /usr/share 
+
+/var:
+Stands for variable. The content of this file is expected to grow . This directory contains log, lock, spool, mail and temp files.
+
+/tmp:
+System Temporary Directory, Accessible by user and root. Store temporary files for user and system, till next boot. 
+
+
+
